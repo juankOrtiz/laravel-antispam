@@ -22,10 +22,16 @@
 
                         <div class="mb-6">
                             <label class="block mb-2 uppercase font-bold text-xs text-gray-700" for="body">Cuerpo</label>
-                            <input type="text" class="border border-gray-400 p-2 w-full" name="body" id="body" required>
+                            <textarea class="border border-gray-400 p-2 w-full" name="body" id="body" required></textarea>
                             @error('body')
                                 <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
                             @enderror
+                        </div>
+
+                        <!-- Campo oculto que no debe ser rellenado (solamente los bots lo harán) -->
+                        <div class="mb-6">
+                            <label class="block mb-2 uppercase font-bold text-xs text-gray-700" for="mi_nombre">Mi nombre</label>
+                            <input type="text" class="border border-gray-400 p-2 w-full" name="mi_nombre" id="mi_nombre" required>
                         </div>
 
                         <div class="mb-6">
