@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bc17cf8-ddaf-4665-b2a2-ce4f8736f375" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-antispam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-antispam.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_10_232046_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_10_232046_create_posts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +154,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610320680788</updated>
-      <workItem from="1610320681919" duration="229000" />
+      <workItem from="1610320681919" duration="423000" />
     </task>
     <servers />
   </component>

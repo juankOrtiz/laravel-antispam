@@ -15,7 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->middleware('auth');
+
+// Rutas para el post
+Route::get('/posts/create', function () {
+    return view('posts.create');
+})->middleware('auth');
+
+Route::post('/posts', function () {
+    // Guardar el post
+})->middleware('auth');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
