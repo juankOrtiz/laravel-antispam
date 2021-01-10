@@ -24,6 +24,14 @@ Route::get('/posts/create', function () {
 })->middleware('auth')->name('posts.create');
 
 Route::post('/posts', function () {
+    if(! request()->has('mi_nombre')) {
+        abort(422, "Spam detectado");
+    }
+
+    if(! empty(request('mi_nombre'))) {
+        abort(422, "Spam detectado");
+    }
+
     Post::create(
         request()->validate([
             'title' => 'required',
