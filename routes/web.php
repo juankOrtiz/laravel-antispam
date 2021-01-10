@@ -20,7 +20,7 @@ Route::get('/', function () {
 // Rutas para el post
 Route::get('/posts/create', function () {
     return view('posts.create');
-})->middleware('auth');
+})->middleware('auth')->name('posts.create');
 
 Route::post('/posts', function () {
     // Guardar el post
