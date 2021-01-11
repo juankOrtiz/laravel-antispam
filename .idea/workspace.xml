@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bc17cf8-ddaf-4665-b2a2-ce4f8736f375" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Antispam.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Antispam.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/antispam.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/antispam.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/antispam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/antispam.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +157,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610320680788</updated>
       <workItem from="1610320681919" duration="2644000" />
-      <workItem from="1610328752133" duration="1850000" />
+      <workItem from="1610328752133" duration="2139000" />
     </task>
     <servers />
   </component>

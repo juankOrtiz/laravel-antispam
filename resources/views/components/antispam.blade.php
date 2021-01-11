@@ -1,13 +1,18 @@
+@php
+    $campoNombre = config('antispam.campo_nombre');
+    $campoTiempo = config('antispam.campo_tiempo');
+@endphp
+
 <div style="display: block">
     <!-- Campo oculto que no debe ser rellenado (solamente los bots lo harán) -->
     <div class="mb-6">
-        <label class="block mb-2 uppercase font-bold text-xs text-gray-700" for="mi_nombre">Mi nombre</label>
-        <input type="text" class="border border-gray-400 p-2 w-full" name="mi_nombre" id="mi_nombre">
+        <label class="block mb-2 uppercase font-bold text-xs text-gray-700" for="{{ $campoNombre }}">Mi nombre</label>
+        <input type="text" class="border border-gray-400 p-2 w-full" name="{{ $campoNombre }}" id="{{ $campoNombre }}">
     </div>
 
     <!-- Campo oculto que calcula el tiempo que se tardó en rellenar el formulario -->
     <div class="mb-6">
-        <label class="block mb-2 uppercase font-bold text-xs text-gray-700" for="tiempo">Tiempo</label>
-        <input type="text" class="border border-gray-400 p-2 w-full" name="tiempo" id="tiempo" value=" {{ microtime(true) }}">
+        <label class="block mb-2 uppercase font-bold text-xs text-gray-700" for="{{ $campoTiempo }}">Tiempo</label>
+        <input type="text" class="border border-gray-400 p-2 w-full" name="{{ $campoTiempo }}" id="{{ $campoTiempo }}" value=" {{ microtime(true) }}">
     </div>
 </div>
