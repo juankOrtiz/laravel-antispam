@@ -24,11 +24,18 @@ Route::get('/posts/create', function () {
 })->middleware('auth')->name('posts.create');
 
 Route::post('/posts', function () {
+    // Comprobar si no existe el campo 'mi_nombre' en la consulta
     if(! request()->has('mi_nombre')) {
         abort(422, "Spam detectado");
     }
-
+    // Comprobar si el campo 'mi_nombre' ha sido rellenado
     if(! empty(request('mi_nombre'))) {
+        abort(422, "Spam detectado");
+    }
+    // Comprobar cuanto tiempo se tardo en rellenar el formulario
+    $ahora = microtime(true);
+    $tiempo_transcurrido = $ahora - request('tiempo');
+    if($tiempo_transcurrido <= 3) {
         abort(422, "Spam detectado");
     }
 
